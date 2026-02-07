@@ -1,27 +1,30 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/navbar";
+
+import Navbar from "./components/Navbar/Navbar";
 
 import Home from "./components/Home/home";
-import Students from "./components/Students/students";
+import Students from "./components/Students/Students";
 import Academics from "./components/Academics/academics";
-import Examination from "./components/Examination/examination";
-import IQAC from "./components/IQAC/placement";
-import Careers from "./components/Careers/careers";
-import TheCollege from "../src/components/About/Thecollege";
-import AboutLayout from "./components/About/aboutlayout";
-import Life from "./components/Life/life";
-import Contact from "./components/contact/contact";
+import Examination from "./components/Examination/Examination";
+import IQAC from "./components/IQAC/Placement";
+import Careers from "./components/Careers/Careers";
+
+import AboutLayout from "./components/About/AboutLayout";
+import TheCollege from "./components/About/TheCollege";
+
+import Life from "./components/Life/Life";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/footer";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
-     
-   <Route path="/about" element={<AboutLayout />}>
+
+        <Route path="/about" element={<AboutLayout />}>
           <Route index element={<TheCollege />} />
         </Route>
 
@@ -31,9 +34,10 @@ function App() {
         <Route path="/iqac" element={<IQAC />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/life" element={<Life />} />
-     <Route path="/contact" element={<Contact/>}/>
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/>
+
+      <Footer />
     </BrowserRouter>
   );
 }
