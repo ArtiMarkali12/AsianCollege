@@ -418,7 +418,6 @@ const events = [
   </div>
 
 </section>
-<Footer/>
     </>
     
   );

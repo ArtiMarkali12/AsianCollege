@@ -53,7 +53,7 @@
 /* menu button */
 /* ALL menu buttons same behaviour */
 .menu-btn {
-  background: #dbd2a4cf;
+  background: #dd590dcf;
   color: #fff;
   padding: 10px 18px;
   font-size: 14px;
@@ -69,7 +69,7 @@
 }
 
 .menu-btn:hover {
-  background:  #dbd2a4cf;
+  background:  #e7910fcf;
 }
 
 /* ===== DROPDOWN ===== */
@@ -120,7 +120,7 @@
 
 /* ===== ANNOUNCEMENT ===== */
 .announcement {
-  background:  #dbd2a4cf;
+  background:  #da9411cf;
   color: #fff;
   text-align: center;
   padding: 10px;
