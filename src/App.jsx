@@ -15,7 +15,7 @@ import Examination from "./components/Examination/examination";
 import IQAC from "./components/IQAC/placement";
 import Careers from "./components/Careers/careers";
 import Life from "./components/Life/life";
-import Contact from "./components/Contact/contact";
+import Contact from "./components/contact/contact";
 
 import AboutLayout from "./components/About/AboutLayout";
 import TheCollege from "./components/About/Thecollege";
