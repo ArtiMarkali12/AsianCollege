@@ -1,6 +1,6 @@
 /* ===== Footer Main ===== */
 .footer {
-  background-color: #fffaf3;
+  background-color: #d65b18;
   color: #ffffff;
   padding: 40px 60px;
   display: grid;
@@ -81,7 +81,7 @@
 }
 
 .social-icons i:hover {
-  background-color: #ffcc00;
+  background-color: #d36211;
   color: #000;
   transform: scale(1.1);
 }

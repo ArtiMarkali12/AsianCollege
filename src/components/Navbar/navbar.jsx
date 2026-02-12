@@ -55,7 +55,16 @@ const Navbar = () => {
           </div>
         </div>
 
-        <NavLink to="/academics" className="menu-btn">Academics</NavLink>
+       {/* ACTIVITIES DROPDOWN */}
+<div className="dropdown">
+  <span className="menu-btn">Activities ▾</span>
+  <div className="dropdown-menu">
+    <NavLink to="/academics/gallery">Gallery</NavLink>
+    <NavLink to="/academics/cultural">Post/blog</NavLink>
+    <NavLink to="/academics/nss">NSS</NavLink>
+    <NavLink to="/academics/club">News pepar publication</NavLink>
+  </div>
+</div>
         <NavLink to="/examination" className="menu-btn">Examination</NavLink>
         <NavLink to="/iqac" className="menu-btn">placement</NavLink>
         <NavLink to="/careers" className="menu-btn">Careers</NavLink>
