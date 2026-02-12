@@ -79,11 +79,11 @@ const events = [
   return (
     <>
       {/* 🔵 Announcement Bar */}
-      <div className="announcement-bar">
+      {/* <div className="announcement-bar">
         <marquee>
           A Brand New Hostel at Asian Residency
         </marquee>
-      </div>
+      </div> */}
 
        {/* 🖼️ Image Slider */}
       <div className="slider">

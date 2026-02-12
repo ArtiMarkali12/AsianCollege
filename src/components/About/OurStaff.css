@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+/* Top Navbar */
+.topbar {
+  background: #d92c2c;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 60px;
+  color: white;
+  align-items: center;
+}
+
+.nav-links span {
+  margin-left: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links span:hover {
+  opacity: 0.7;
+}
+
+/* Banner */
+.banner {
+  height: 240px;
+  background: url('../../assets/about/about.png') center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  animation: fadeIn 1.2s ease;
+}
+
+.overlay h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.overlay p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Main Layout */
+.main {
+  display: flex;
+  padding: 50px 80px;
+  gap: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  animation: slideIn 0.8s ease;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  color: #d92c2c;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background: #f1f1f1;
+}
+
+.sidebar .active {
+  background: #d92c2c;
+  color: white;
+}
+
+/* Content */
+.content {
+  flex: 1;
+}
+
+/* Tabs */
+.tabs {
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  padding: 8px 18px;
+  margin-right: 8px;
+  border: none;
+  background: #e9ecef;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.tabs button:hover {
+  background: #d92c2c;
+  color: white;
+}
+
+.active-tab {
+  background: #d92c2c;
+  color: white;
+}
+
+/* Staff Grid */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Staff Card */
+.staff-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+  transition: 0.4s;
+}
+
+.staff-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.img-box {
+  margin-right: 20px;
+}
+
+.img-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d92c2c;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.info p {
+  font-size: 14px;
+  color: gray;
+  margin: 6px 0 12px;
+}
+
+.info button {
+  background: #2f3e46;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info button:hover {
+  background: #d92c2c;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.staff-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+  position: relative;
+}
+
+.staff-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.image-wrapper {
+  height: 220px;
+  background: #2f3e46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  transition: 0.4s ease;
+}
+
+.staff-card:hover .image-wrapper img {
+  transform: scale(1.08);
+}
+
+/* Content */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #2f3e46;
+}
+
+.card-content span {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.card-content button {
+  background: #d92c2c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-content button:hover {
+  background: #2f3e46;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.image-wrapper img {
+  border: 1px solid white;   /* किंवा red */
+}

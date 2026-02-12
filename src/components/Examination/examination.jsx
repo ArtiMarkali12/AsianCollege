@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Examination.css";
 
 const examinations = [
@@ -113,15 +113,35 @@ const manuals = [
       "Step-by-step manual for professional and skill-based certifications.",
   },
 ];
+
 function Examination() {
+  // Intersection Observer for scroll animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <section className="examination-section">
+      <section className="examination-section animate-on-scroll">
         <div className="container">
           <h2 className="section-title">Manual of Examinations</h2>
           <div className="manuals-grid">
             {manuals.map((manual, index) => (
-              <div key={index} className="manual-card">
+              <div key={index} className="manual-card animate-on-scroll">
                 <h3>{manual.title}</h3>
                 <p>{manual.description}</p>
               </div>
@@ -129,11 +149,12 @@ function Examination() {
           </div>
         </div>
       </section>
-      <section className="exam-schedule-section">
+
+      <section className="exam-schedule-section animate-on-scroll">
         <div className="container">
           <h2 className="section-title">Examination Schedule</h2>
           <div className="table-responsive">
-            <table className="exam-table">
+            <table className="exam-table animate-on-scroll">
               <thead>
                 <tr>
                   <th>Exam Name</th>
@@ -154,11 +175,12 @@ function Examination() {
           </div>
         </div>
       </section>
-      <section className="exam-timetable-section">
+
+      <section className="exam-timetable-section animate-on-scroll">
         <div className="container">
           <h2 className="section-title">Examination Time Table</h2>
           <div className="table-responsive">
-            <table className="timetable-table">
+            <table className="timetable-table animate-on-scroll">
               <thead>
                 <tr>
                   <th>Exam Name</th>
@@ -181,14 +203,15 @@ function Examination() {
           </div>
         </div>
       </section>
-      <section className="certificate-section">
+
+      <section className="certificate-section animate-on-scroll">
         <div className="container">
           <h2 className="section-title">Certificate Services</h2>
           <div className="cards-grid">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="service-card"
+                className="service-card animate-on-scroll"
                 style={{ borderTop: `5px solid ${service.color}` }}
               >
                 <h3>{service.title}</h3>

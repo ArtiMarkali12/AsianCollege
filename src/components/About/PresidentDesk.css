@@ -1,0 +1,168 @@
+/* ===== Page Layout ===== */
+.president-page {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+}
+
+/* Hero Section */
+.president-hero {
+  height: 250px;
+  background: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600")
+    center/cover no-repeat;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 36px;
+}
+
+.hero-overlay a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+/* Layout */
+.president-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Sidebar */
+.president-sidebar {
+  width: 260px;
+}
+
+.president-sidebar h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 6px;
+}
+
+.president-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.president-sidebar li a {
+  display: block;
+  padding: 14px;
+  background: #2c4b55;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.president-sidebar li a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #d32f2f;
+}
+
+.president-sidebar li.active a {
+  background: #1f343b;
+}
+
+/* Content */
+.president-content {
+  flex: 1;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease;
+}
+
+.president-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Top Section */
+.president-top-section {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Image Animation */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: 0.8s ease;
+}
+
+.slide-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.president-image img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* Quote Animation */
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: 0.8s ease;
+}
+
+.slide-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.president-quote {
+  background: #e0e0e0;
+  padding: 20px;
+  flex: 1;
+  font-style: italic;
+}
+
+/* Zoom Animation */
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.8s ease;
+}
+
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.president-text p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .president-container {
+    flex-direction: column;
+  }
+
+  .president-top-section {
+    flex-direction: column;
+  }
+
+  .president-image img {
+    width: 100%;
+  }
+}

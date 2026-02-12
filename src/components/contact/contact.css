@@ -175,9 +175,9 @@ body {
 /* ================= BUTTON ================= */
 
 .contact-form button {
-  margin-top: 28px;
+  margin-top: 15px;
   padding: 14px;
-  width: 240px;
+  width: 150px;
   background: #1f3a40;
   color: #fff;
   border: none;
@@ -269,4 +269,38 @@ body {
   .captcha-box {
     font-size: 24px;
   }
+}
+
+
+
+.captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.captcha-box {
+  background: #f0f0f0;
+  padding: 8px 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.refresh-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.refresh-btn:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
 }

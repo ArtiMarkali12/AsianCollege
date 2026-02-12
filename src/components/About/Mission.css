@@ -1,0 +1,179 @@
+/* ===== PAGE ===== */
+.mission-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafc;
+  color: #2c3e50;
+}
+
+/* ===== HERO ===== */
+.mission-hero {
+  height: 280px;
+  background: url('../../assets/about/about-bg.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-overlay p a {
+  color: #ffd166;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.hero-overlay p a:hover {
+  color: #f4a261;
+}
+
+/* ===== LAYOUT ===== */
+.mission-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.mission-sidebar {
+  width: 230px;
+  background-color: #264653;
+  border-radius: 8px;
+  padding: 25px 20px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.mission-sidebar h3 {
+  color: #e76f51;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e76f51;
+  padding-bottom: 10px;
+}
+
+.mission-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mission-sidebar li a {
+  display: block;
+  padding: 12px 15px;
+  color: #f4f1de;
+  font-weight: 600;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.mission-sidebar li a:hover,
+.mission-sidebar li.active a {
+  background-color: #2a9d8f;
+  border-left-color: #e76f51;
+  color: #fff;
+}
+
+/* ===== CONTENT ===== */
+.mission-content {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 30px 35px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+}
+
+/* ===== FADE IN ANIMATION ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== IMAGE ===== */
+.mission-image {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.mission-image img {
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
+  transition: transform 0.3s ease;
+}
+
+.mission-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== QUOTE ===== */
+.mission-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  border-left: 6px solid #e76f51;
+  padding-left: 20px;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .mission-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .mission-sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .mission-content {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .mission-quote {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+
+  .mission-image img {
+    max-width: 100%;
+  }
+}
