@@ -83,7 +83,7 @@ const Mission = () => {
             className={`fade-in mission-quote ${visible["quote"] ? "visible" : ""}`}
           >
             “Provide greater opportunities and access to higher education with
-            equity to all the eligible students/persons and in particular to
+            equity to all the eligible students/persons and in  a particular to
             underprivileged sections thereby contributing to the development
             of society and nation.”
           </blockquote>
