@@ -45,15 +45,7 @@ const Life = () => {
         </div>
 
        
-         <div className="life-section">
-          <img src={foodImg} alt="Sports Ground" />
-          <div className="life-content">
-            <h2>FOOD COURT</h2>
-            <p>
-Provides hygienic and sumptuous food to the students. The food is available at subsidized rates. The canteen caters to 400 persons at a time. Monthly mess facility, ice cream parlor, juice parlor,coffee shop are also available for all students.
-            </p>
-          </div>
-        </div>
+        
          <div className="life-section">
           <img src={libraryImg} alt="Sports Ground" />
           <div className="life-content">
