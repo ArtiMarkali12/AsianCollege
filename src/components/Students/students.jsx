@@ -1,11 +1,11 @@
-import React from 'react'
+import { Outlet } from "react-router-dom";
 
-function students() {
+function Students() {
   return (
     <div>
-      roohan
+      <Outlet />
     </div>
-  )
+  );
 }
 
-export default students;
+export default Students;
