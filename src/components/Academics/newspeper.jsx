@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./Newspeper.css";
-
+import notise from "../../assets/students/notise.png";
+import notise2 from "../../assets/students/notise2.png";
+import notise3 from "../../assets/students/notise3.png";
 const newsData = [
   {
     id: 1,
@@ -8,7 +10,7 @@ const newsData = [
     description:
       "Our students secured first rank in the state level technical competition.",
     date: "12 Jan 2026",
-    image: "https://via.placeholder.com/400x250",
+    image: notise,
   },
   {
     id: 2,
@@ -16,7 +18,7 @@ const newsData = [
     description:
       "The grand cultural event was highlighted in a leading daily newspaper.",
     date: "5 Feb 2026",
-    image: "https://via.placeholder.com/400x250",
+    image:notise2,
   },
   {
     id: 3,
@@ -24,7 +26,7 @@ const newsData = [
     description:
       "Our NSS volunteers organized a successful rural development camp.",
     date: "20 Feb 2026",
-    image: "https://via.placeholder.com/400x250",
+    image: notise3,
   },
 ];
 

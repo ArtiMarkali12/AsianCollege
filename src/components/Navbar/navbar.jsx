@@ -49,9 +49,9 @@ const Navbar = () => {
         <div className="dropdown">
           <span className="menu-btn">Students ▾</span>
           <div className="dropdown-menu">
-            <NavLink to="/students/ug">UG</NavLink>
-            <NavLink to="/students/pg">PG</NavLink>
-            <NavLink to="/students/phd">PhD</NavLink>
+            <NavLink to="/students/Courses">Courses</NavLink>
+            <NavLink to="/students/NoticeBoard">NoticeBoard</NavLink>
+            <NavLink to="/students/Admission">Admission</NavLink>
           </div>
         </div>
 
