@@ -5,7 +5,7 @@
 
 /* ================= TICKER ================= */
 .notice-ticker {
-  background: linear-gradient(90deg, #009B83, #006b5f);
+  background: linear-gradient(90deg, #263f48, #006b5f);
   color: white;
   overflow: hidden;
   white-space: nowrap;
@@ -28,7 +28,7 @@
   text-align: center;
   margin: 50px 0;
   font-size: 34px;
-  color: #009B83;
+  color: #263f48;
 }
 
 /* ================= CLASSIC SECTION ================= */
@@ -42,7 +42,7 @@
 }
 
 .classic-left {
-  background: #009B83;
+  background: #263f48;
   color: white;
   padding: 30px;
   width: 30%;
@@ -78,7 +78,7 @@
 }
 
 .download-btn {
-  background: #009B83;
+  background: #263f48;
   color: white;
   padding: 6px 15px;
   border-radius: 20px;
@@ -88,7 +88,7 @@
 }
 
 .download-btn:hover {
-  background: #006b5f;
+  background: #263f48;
 }
 
 /* ================= CARDS ================= */
@@ -135,7 +135,7 @@
 }
 
 .accordion-header {
-  background: #009B83;
+  background: #263f48;
   color: white;
   padding: 12px;
   margin-top: 10px;
@@ -167,7 +167,7 @@
 .timeline-dot {
   width: 18px;
   height: 18px;
-  background: #009B83;
+  background: #263f48;
   border-radius: 50%;
   margin-bottom: 10px;  /* 👈 dot खाली space */
 }

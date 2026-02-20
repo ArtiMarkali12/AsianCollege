@@ -167,7 +167,7 @@ The college emphasizes academic excellence, professional competency, and holisti
         of manpower. It has become almost important to generate quality
         and competent knowledge managers.
       </p>
-      <button className="info-btn">Read More</button>
+      {/* <button className="info-btn">Read More</button> */}
     </div>
   </div>
 
@@ -184,7 +184,7 @@ The college emphasizes academic excellence, professional competency, and holisti
         accomplished by students, Asian College is a common sight in
         newspapers.
       </p>
-      <button className="info-btn">View Coverages</button>
+      {/* <button className="info-btn">View Coverages</button> */}
     </div>
   </div>
 
@@ -200,7 +200,7 @@ The college emphasizes academic excellence, professional competency, and holisti
         result of the hard work and dedication of students and faculty.
         From awards to competitions, Asian has excelled in all fields.
       </p>
-      <button className="info-btn">View Achievements</button>
+      {/* <button className="info-btn">View Achievements</button> */}
     </div>
   </div>
 </section>

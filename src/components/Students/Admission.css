@@ -51,7 +51,7 @@
 .section-title {
   font-size: 32px;
   margin-bottom: 50px;
-  color: #009B83;
+  color: #263f48;;
   font-weight: 600;
 }
 
@@ -82,7 +82,7 @@
 
 .course-image-box h3 {
   margin-top: 15px;
-  color: #009B83;
+  color: #263f48;
 }
 
 /* ===== COURSE DETAILS ===== */
@@ -114,7 +114,7 @@
 
 .info-section {
   padding: 90px 20px;
-  color: rgb(10, 205, 235);
+  color: #263f48;;
   display: flex;
   justify-content: center;   /* 👈 Full section center */
 }
@@ -172,7 +172,7 @@
   margin-top: 15px;
   padding: 8px 18px;
   background: rgb(209, 8, 8);
-  color: #009B83;
+  color: #263f48;;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 500;
@@ -207,7 +207,7 @@
   margin-top: 15px;
   padding: 8px 18px;
   background: rgb(41, 153, 110);
-  color: #009B83;
+  color: #263f48;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 500;

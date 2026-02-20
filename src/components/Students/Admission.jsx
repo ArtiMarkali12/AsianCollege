@@ -1,6 +1,6 @@
 import React from "react";
 import "./Admission.css";
-import heroImage from "../../assets/students/asian.png";
+import heroImage from "../../assets/students/exam.png";
 import artsImg from "../../assets/students/ba.png";
 import commerceImg from "../../assets/students/bcom.png";
 import scienceImg from "../../assets/students/bcs.png";

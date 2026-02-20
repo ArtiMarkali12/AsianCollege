@@ -26,34 +26,37 @@ const Navbar = () => {
 
   return (
     <>
-      {/* TOP HEADER */}
+      {/* ===== TOP HEADER ===== */}
       <div className="top-header">
         <div className="header-container">
           <div className="left-section">
             <img src={image} alt="Logo" className="logo" />
+{/* 
+            <div className="college-text">
+              <h6>ASIAN COLLEGE OF COMMERCE AND ARTS</h6>
+              <h6>MANAGEMENT & RESEARCH, AKURDI</h6>
+              <p>
+                Accredited by NAAC | ISO 21001:2018 <br />
+                Approved by AICTE | Affiliated to SPPU
+              </p>
+            </div> */}
           </div>
 
-          <div
-            className="hamburger"
-            onClick={() => setMobileOpen(!mobileOpen)}
-          >
+          <div className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
             ☰
           </div>
         </div>
       </div>
 
-      {/* MENU */}
+      {/* ===== MENU BAR ===== */}
       <nav className={`menu-bar ${mobileOpen ? "active" : ""}`}>
         <NavLink to="/" className="menu-btn" onClick={handleCloseMenu}>
           Home
         </NavLink>
 
-        {/* ABOUT */}
+        {/* ABOUT DROPDOWN */}
         <div className="dropdown">
-          <div
-            className="menu-btn"
-            onClick={() => setAboutOpen(!aboutOpen)}
-          >
+          <div className="menu-btn" onClick={() => setAboutOpen(!aboutOpen)}>
             About ▾
           </div>
 
@@ -79,7 +82,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* STUDENTS */}
+        {/* STUDENTS DROPDOWN */}
         <div className="dropdown">
           <div
             className="menu-btn"
@@ -89,19 +92,19 @@ const Navbar = () => {
           </div>
 
           <div className={`dropdown-menu ${studentOpen ? "show" : ""}`}>
-            <NavLink to="/students/ug" onClick={handleCloseMenu}>
-              UG
+            <NavLink to="/students/Courses" onClick={handleCloseMenu}>
+              Courses
             </NavLink>
-            <NavLink to="/students/pg" onClick={handleCloseMenu}>
-              PG
+            <NavLink to="/students/NoticeBoard" onClick={handleCloseMenu}>
+              NoticeBoard
             </NavLink>
-            <NavLink to="/students/phd" onClick={handleCloseMenu}>
-              PhD
+            <NavLink to="/students/Admission" onClick={handleCloseMenu}>
+              Admission
             </NavLink>
           </div>
         </div>
 
-        {/* ACTIVITIES */}
+        {/* ACTIVITIES DROPDOWN */}
         <div className="dropdown">
           <div
             className="menu-btn"
@@ -134,35 +137,19 @@ const Navbar = () => {
           Examination
         </NavLink>
 
-        <NavLink
-          to="/iqac"
-          className="menu-btn"
-          onClick={handleCloseMenu}
-        >
+        <NavLink to="/iqac" className="menu-btn" onClick={handleCloseMenu}>
           Placement
         </NavLink>
 
-        <NavLink
-          to="/careers"
-          className="menu-btn"
-          onClick={handleCloseMenu}
-        >
+        <NavLink to="/careers" className="menu-btn" onClick={handleCloseMenu}>
           Careers
         </NavLink>
 
-        <NavLink
-          to="/life"
-          className="menu-btn"
-          onClick={handleCloseMenu}
-        >
+        <NavLink to="/life" className="menu-btn" onClick={handleCloseMenu}>
           Life on Campus
         </NavLink>
 
-        <NavLink
-          to="/contact"
-          className="menu-btn"
-          onClick={handleCloseMenu}
-        >
+        <NavLink to="/contact" className="menu-btn" onClick={handleCloseMenu}>
           Contact Us
         </NavLink>
       </nav>
